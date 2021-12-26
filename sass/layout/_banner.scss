@@ -1,0 +1,43 @@
+.banner {
+  padding: 225px 0;
+  background-image: url("../../images/product-header-bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  .banner__container {
+    display: flex;
+    align-items: center;
+    .banner__content {
+      .banner__title {
+        // padding cho chu font size font weight dung em rem
+        // khoang cach giua bloc va cac element dung px
+        font-size: 7rem;
+        font-weight: 700;
+        color: $primary-main;
+        margin-bottom: 7px;
+      }
+      .banner__sub-title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: $primary-dark;
+        margin-bottom: 30px;
+      }
+      .banner__description {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $primary-dark;
+        margin-bottom: 25px;
+        color: #656774;
+      }
+    }
+    .banner__image {
+      img {
+        max-width: 100%;
+        height: auto;
+
+        @include Responsive(MD) {
+          display: none;
+        }
+      }
+    }
+  }
+}
